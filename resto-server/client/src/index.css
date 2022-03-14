@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+body {
+  background-color: #FFFFAA;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*****************************************************************
+* NAVBAR
+*****************************************************************/
+#navbar-fixed {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  height: 2em;
+}
+
+#div-resto-nav {
+  width: auto;
+}
+#resto-nav {
+  font-family: 'Stick', sans-serif;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#navbar-anchors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 2em;
+  width: 100%;
+}
+
+.nav-element {
+  text-decoration: none;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif; 
+}
+
+/*****************************************************************
+* TITLES
+*****************************************************************/
+
+#resto-name {
+  font-family: 'Stick', sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+
+.group-title {
+  margin-top: 50px;
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+/*****************************************************************
+* DISHES
+*****************************************************************/
+
+.dish-div {
+  display: grid;
+  width: 100%;
+  height: 75px;
+  grid-template-columns: 2fr 3fr 1fr 6fr;
+  grid-template-areas: "name description price image";
+  justify-items: start;
+  align-items: center;
+  border: 3px solid black;
+  grid-gap: 0px 20px;
+}
+
+.div-name {
+  grid-area: name;
+}
+.dish-name {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.div-description {
+  grid-area: description;
+}
+
+.dish-description {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: center;
+}
+
+.div-price {
+  grid-area: price;
+}
+
+.dish-price {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+.div-img {
+  grid-area: image;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  width: 100%;
+}
+
+.dish-image {
+  width: auto;
+  max-height: 100%;
+}
